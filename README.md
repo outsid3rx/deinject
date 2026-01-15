@@ -1,5 +1,7 @@
 # deinject
 
+![Пример кода](https://raw.githubusercontent.com/outsid3rx/deinject/refs/heads/main/docs/screenshot.svg)
+
 Простая и легковесная библиотека для внедрения зависимостей. Работает при помощи декораторов и Babel-плагина.
 Репозиторий содержит два пакета: `@deinject/core` - утилиты для работы плагина и `babel-plugin-deinject-di` - Babel-плагин, выполняющий внедрение зависимостей.
 

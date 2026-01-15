@@ -1,5 +1,9 @@
 # babel-plugin-deinject-di
 
+[![NPM](https://nodei.co/npm/babel-plugin-deinject-di.png?mini=true)](https://npmjs.org/package/babel-plugin-deinject-di)
+
+![Пример кода](https://raw.githubusercontent.com/outsid3rx/deinject/refs/heads/main/docs/screenshot.svg)
+
 Babel-плагин для внедрения зависимостей с использованием декораторов из пакета `@deinject/core`.
 
 ## Установка

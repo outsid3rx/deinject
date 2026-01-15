@@ -1,7 +1,24 @@
 {
   "name": "babel-plugin-deinject-di",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
+  "keywords": [
+    "babel",
+    "di",
+    "dependency-injection",
+    "inversion-of-control",
+    "plugin"
+  ],
+  "author": "Max Zernyaev <winterzz@internet.ru>",
+  "description": "A Babel plugin for dependency injection that works with deinject-core library.",
+  "bugs": {
+    "url": "https://github.com/outsid3rx/deinject/issues"
+  },
+  "homepage": "https://github.com/outsid3rx/deinject",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/outsid3rx/deinject.git"
+  },
   "type": "module",
   "scripts": {
     "build": "tsdown",

@@ -1,8 +1,24 @@
 {
   "name": "deinject-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "type": "module",
+  "keywords": [
+    "babel",
+    "di",
+    "dependency-injection",
+    "inversion-of-control"
+  ],
+  "author": "Max Zernyaev <winterzz@internet.ru>",
+  "description": "A lightweight dependency injection library for JavaScript and TypeScript, designed to work with Babel.",
+  "bugs": {
+    "url": "https://github.com/outsid3rx/deinject/issues"
+  },
+  "homepage": "https://github.com/outsid3rx/deinject",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/outsid3rx/deinject.git"
+  },
   "scripts": {
     "build": "tsdown",
     "build:watch": "tsdown --watch",

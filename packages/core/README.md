@@ -1,4 +1,8 @@
-# @deinject-core
+# deinject-core
+
+[![NPM](https://nodei.co/npm/deinject-core.png?mini=true)](https://npmjs.org/package/babel-plugin-deinject-di)
+
+![Пример кода](https://raw.githubusercontent.com/outsid3rx/deinject/refs/heads/main/docs/screenshot.svg)
 
 Пакет утилит для внедрения зависимостей в TypeScript и JavaScript проектах при помощи Babel-плагина `babel-plugin-deinject-di`.
 
