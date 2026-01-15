@@ -6,7 +6,7 @@
 ## Установка
 
 ```bash
-npm install deinject/core
+npm install deinject-core
 npm install -D babel-plugin-deinject-di @babel/core
 # пример с rollup
 npm install -D rollup @rollup/plugin-babel @rollup/plugin-node-resolve @rollup/plugin-typescript
@@ -16,7 +16,7 @@ npm install -D rollup @rollup/plugin-babel @rollup/plugin-node-resolve @rollup/p
 
 ```typescript
 // config.service.ts
-import { Injectable } from '@deinject/core'
+import { Injectable } from 'deinject-core'
 
 @Injectable()
 export class ConfigService {
@@ -40,7 +40,7 @@ export class TestService {
 }
 
 // index.ts
-import { resolve } from '@deinject/core'
+import { resolve } from 'deinject-core'
 import { H3, serve } from 'h3'
 
 import { TestService } from './test.service'
@@ -57,5 +57,5 @@ serve(app, { port: service.getPort() })
 }
 ```
 
-Более подробно можно посмотреть в примере [example-server](./packages/example-server).
+Более подробно можно посмотреть в примере [example-server](https://github.com/outsid3rx/deinject/tree/main/packages/example-server).
 

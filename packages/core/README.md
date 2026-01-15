@@ -1,11 +1,11 @@
-# @deinject/core
+# @deinject-core
 
 Пакет утилит для внедрения зависимостей в TypeScript и JavaScript проектах при помощи Babel-плагина `babel-plugin-deinject-di`.
 
 ## Установка
 
 ```bash
-npm install deinject/core
+npm install deinject-core
 npm install -D babel-plugin-deinject-di @babel/core
 ```
 
@@ -51,10 +51,12 @@ export default {
 
 ## Пример использования
 
-```typescript
-import { Injectable } from "@deinject/core";
+Для классов, которые ожидают внедрение зависимостей, используйте декоратор `@Injectable()`. В конструкторе класса и декораторе укажите зависимости, которые должны быть внедрены.
 
-@Injectable
+```typescript
+import { Injectable } from "deinject-core";
+
+@Injectable()
 class A {
     public sayHello() {
         return "Hello from A";
@@ -70,6 +72,8 @@ class B {
     }
 }
 
-import { resolve } from "@deinject/core";
+import { resolve } from "deinject-core";
 console.log(resolve(B).greet());
 ```
+
+Более подробно можно посмотреть в примере [example-server](https://github.com/outsid3rx/deinject/tree/main/packages/example-server).

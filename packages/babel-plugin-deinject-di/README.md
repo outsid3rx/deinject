@@ -5,7 +5,7 @@ Babel-плагин для внедрения зависимостей с исп�
 ## Установка
 
 ```bash
-npm install deinject/core
+npm install deinject-core
 npm install -D babel-plugin-deinject-di @babel/core
 ```
 
@@ -19,4 +19,4 @@ npm install -D babel-plugin-deinject-di @babel/core
 }
 ```
 
-Более подробную информацию о настройке сборки проекта с использованием Babel можно найти в [README пакета @deinject/core](../core/README.md).
+Более подробную информацию о настройке сборки проекта с использованием Babel можно найти в [README пакета deinject-core](https://github.com/outsid3rx/deinject/tree/main/packages/core).
