@@ -1,9 +1,16 @@
 import type { PluginObj } from '@babel/core'
-import * as t from '@babel/types'
+import {
+  arrayExpression,
+  assignmentExpression,
+  booleanLiteral,
+  expressionStatement,
+  identifier,
+  isCallExpression,
+  isIdentifier,
+  memberExpression,
+} from '@babel/types'
 
-import { extractConstructorDeps } from './lib'
-
-export { Container, globalContainer, Injectable, resolve } from './lib'
+import { extractConstructorDeps } from './utils'
 
 export default function diPlugin(): PluginObj {
   return {
@@ -16,8 +23,8 @@ export default function diPlugin(): PluginObj {
 
         const injectableIndex = decorators.findIndex((d) => {
           return (
-            t.isCallExpression(d.expression) &&
-            t.isIdentifier(d.expression.callee, {
+            isCallExpression(d.expression) &&
+            isIdentifier(d.expression.callee, {
               name: 'Injectable',
             })
           )
@@ -37,19 +44,19 @@ export default function diPlugin(): PluginObj {
           path.node.decorators = null
         }
 
-        const depsAssign = t.expressionStatement(
-          t.assignmentExpression(
+        const depsAssign = expressionStatement(
+          assignmentExpression(
             '=',
-            t.memberExpression(classId, t.identifier('__deps')),
-            t.arrayExpression(deps.deps),
+            memberExpression(classId, identifier('__deps')),
+            arrayExpression(deps.deps),
           ),
         )
 
-        const injectableAssign = t.expressionStatement(
-          t.assignmentExpression(
+        const injectableAssign = expressionStatement(
+          assignmentExpression(
             '=',
-            t.memberExpression(classId, t.identifier('__injectable')),
-            t.booleanLiteral(true),
+            memberExpression(classId, identifier('__injectable')),
+            booleanLiteral(true),
           ),
         )
 

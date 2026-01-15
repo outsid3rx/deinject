@@ -29,21 +29,14 @@ export class Container {
 
     let instance: T
 
-    // class provider
     if (typeof provider === 'function') {
       const ctor = provider as Class<T> & { __deps?: Token[] }
       const deps = ctor.__deps ?? []
       const args = deps.map((dep) => this.resolve(dep))
       instance = new ctor(...args)
-    }
-
-    // factory provider
-    else if (this.isFactoryProvider(provider)) {
+    } else if (this.isFactoryProvider(provider)) {
       instance = provider.useFactory(this)
-    }
-
-    // value provider
-    else {
+    } else {
       instance = provider as T
     }
 

@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-deinject-di",
+  "name": "@deinject/core",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
@@ -9,12 +9,13 @@
     "lint": "eslint './src/**/*.ts'",
     "lint:fix": "eslint './src/**/*.ts' --fix"
   },
-  "devDependencies": {
-    "@babel/core": "^7.28.6",
-    "@types/babel__core": "^7.20.5",
-    "tsdown": "^0.20.0-beta.3"
+  "peerDependencies": {
+    "@babel/core": "^7.28.6"
   },
-  "dependencies": {},
+  "devDependencies": {
+    "tsdown": "^0.20.0-beta.3",
+    "@types/babel__core": "^7.20.5"
+  },
   "exports": {
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"

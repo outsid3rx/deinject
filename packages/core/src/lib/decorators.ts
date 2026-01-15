@@ -16,7 +16,6 @@ export function Injectable(deps: Token[] = []) {
     target.__deps = deps
     target.__injectable = true
 
-    // 🔥 auto-registration
     globalContainer.register(target)
   }
 }

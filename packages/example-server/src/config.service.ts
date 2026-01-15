@@ -1,4 +1,4 @@
-import { Injectable } from 'babel-plugin-deinject-di'
+import { Injectable } from '@deinject/core'
 
 @Injectable()
 export class ConfigService {
