@@ -1,0 +1,22 @@
+# babel-plugin-deinject-di
+
+Babel-плагин для внедрения зависимостей с использованием декораторов из пакета `@deinject/core`.
+
+## Установка
+
+```bash
+npm install deinject/core
+npm install -D babel-plugin-deinject-di @babel/core
+```
+
+## Конфигурация Babel
+
+Создайте файл `babel.config.json` в корне вашего проекта и добавьте следующий код:
+
+```json
+{
+"plugins": ["deinject-di"]
+}
+```
+
+Более подробную информацию о настройке сборки проекта с использованием Babel можно найти в [README пакета @deinject/core](../core/README.md).

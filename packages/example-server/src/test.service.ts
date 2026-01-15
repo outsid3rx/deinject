@@ -1,4 +1,4 @@
-import { Injectable } from '@deinject/core'
+import { Injectable } from 'deinject-core'
 
 import { ConfigService } from './config.service'
 
