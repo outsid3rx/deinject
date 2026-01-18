@@ -1,8 +1,13 @@
 {
   "name": "deinject-core",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "license": "MIT",
   "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
   "keywords": [
     "babel",
     "di",
@@ -23,7 +28,8 @@
     "build": "tsdown",
     "build:watch": "tsdown --watch",
     "lint": "eslint './src/**/*.ts'",
-    "lint:fix": "eslint './src/**/*.ts' --fix"
+    "lint:fix": "eslint './src/**/*.ts' --fix",
+    "prepublishOnly": "yarn run build"
   },
   "peerDependencies": {
     "@babel/core": "^7.28.6"
