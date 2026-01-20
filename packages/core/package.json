@@ -1,6 +1,6 @@
 {
-  "name": "deinject-core",
-  "version": "1.0.4",
+  "name": "@deinject/core",
+  "version": "1.0.5",
   "license": "MIT",
   "type": "module",
   "files": [

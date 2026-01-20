@@ -1,6 +1,6 @@
 {
-  "name": "babel-plugin-deinject-di",
-  "version": "1.0.4",
+  "name": "@deinject/babel-plugin-di",
+  "version": "1.0.6",
   "license": "MIT",
   "files": [
     "dist",
@@ -15,7 +15,7 @@
     "plugin"
   ],
   "author": "Max Zernyaev <winterzz@internet.ru>",
-  "description": "A Babel plugin for dependency injection that works with deinject-core library.",
+  "description": "A Babel plugin for dependency injection that works with @deinject/core library.",
   "bugs": {
     "url": "https://github.com/outsid3rx/deinject/issues"
   },

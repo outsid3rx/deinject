@@ -1,16 +1,16 @@
-# babel-plugin-deinject-di
+# @deinject/babel-plugin-di
 
-[![NPM](https://nodei.co/npm/babel-plugin-deinject-di.png?mini=true)](https://npmjs.org/package/babel-plugin-deinject-di)
+[![NPM](https://nodei.co/npm/@deinject/babel-plugin-di.png?mini=true)](https://npmjs.org/package/@deinject/babel-plugin-di)
 
-![Пример кода](https://raw.githubusercontent.com/outsid3rx/deinject/refs/heads/main/docs/screenshot.svg)
+![Пример кода](https://raw.githubusercontent.com/outsid3rx/deinject/refs/heads/main/docs/screenshot.png)
 
 Babel-плагин для внедрения зависимостей с использованием декораторов из пакета `@deinject/core`.
 
 ## Установка
 
 ```bash
-npm install deinject-core
-npm install -D babel-plugin-deinject-di @babel/core
+npm install @deinject/core
+npm install -D @deinject/babel-plugin-di @babel/core
 ```
 
 ## Конфигурация Babel
@@ -19,7 +19,7 @@ npm install -D babel-plugin-deinject-di @babel/core
 
 ```json
 {
-"plugins": ["deinject-di"]
+"plugins": ["@deinject/di"]
 }
 ```
 

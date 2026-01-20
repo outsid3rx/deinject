@@ -13,16 +13,16 @@
     "lint:fix": "eslint './src/**/*.ts' --fix"
   },
   "dependencies": {
+    "@deinject/core": "^1.0.4",
     "h3": "^2.0.1-rc.7",
-    "tslib": "^2.8.1",
-    "deinject-core": "*"
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.28.6",
+    "@deinject/babel-plugin-di": "^1.0.5",
     "@rollup/plugin-babel": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-typescript": "^12.3.0",
-    "rollup": "^4.55.1",
-    "babel-plugin-deinject-di": "*"
+    "rollup": "^4.55.1"
   }
 }

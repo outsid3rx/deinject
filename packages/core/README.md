@@ -1,16 +1,16 @@
-# deinject-core
+# @deinject/core
 
-[![NPM](https://nodei.co/npm/deinject-core.png?mini=true)](https://npmjs.org/package/babel-plugin-deinject-di)
+[![NPM](https://nodei.co/npm/@deinject/core.png?mini=true)](https://npmjs.org/package/@deinject/core)
 
-![Пример кода](https://raw.githubusercontent.com/outsid3rx/deinject/refs/heads/main/docs/screenshot.svg)
+![Пример кода](https://raw.githubusercontent.com/outsid3rx/deinject/refs/heads/main/docs/screenshot.png)
 
-Пакет утилит для внедрения зависимостей в TypeScript и JavaScript проектах при помощи Babel-плагина `babel-plugin-deinject-di`.
+Пакет утилит для внедрения зависимостей в TypeScript и JavaScript проектах при помощи Babel-плагина `@deinject/babel-plugin-di`.
 
 ## Установка
 
 ```bash
-npm install deinject-core
-npm install -D babel-plugin-deinject-di @babel/core
+npm install @deinject/core
+npm install -D @deinject/babel-plugin-di @babel/core
 ```
 
 ## Конфигурация Babel и сборка проекта
@@ -19,7 +19,7 @@ npm install -D babel-plugin-deinject-di @babel/core
 
 ```json
 {
-"plugins": ["deinject-di"]
+"plugins": ["@deinject/di"]
 }
 ```
 
@@ -58,7 +58,7 @@ export default {
 Для классов, которые ожидают внедрение зависимостей, используйте декоратор `@Injectable()`. В конструкторе класса и декораторе укажите зависимости, которые должны быть внедрены.
 
 ```typescript
-import { Injectable } from "deinject-core";
+import { Injectable } from "@deinject/core";
 
 @Injectable()
 class A {
@@ -76,7 +76,7 @@ class B {
     }
 }
 
-import { resolve } from "deinject-core";
+import { resolve } from "@deinject/core";
 console.log(resolve(B).greet());
 ```
 

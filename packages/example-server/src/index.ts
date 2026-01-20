@@ -1,4 +1,4 @@
-import { resolve } from 'deinject-core'
+import { resolve } from '@deinject/core'
 import { H3, serve } from 'h3'
 
 import { TestService } from './test.service'

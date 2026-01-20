@@ -1,15 +1,15 @@
 # deinject
 
-![Пример кода](https://raw.githubusercontent.com/outsid3rx/deinject/refs/heads/main/docs/screenshot.svg)
+![Пример кода](https://raw.githubusercontent.com/outsid3rx/deinject/refs/heads/main/docs/screenshot.png)
 
 Простая и легковесная библиотека для внедрения зависимостей. Работает при помощи декораторов и Babel-плагина.
-Репозиторий содержит два пакета: `@deinject/core` - утилиты для работы плагина и `babel-plugin-deinject-di` - Babel-плагин, выполняющий внедрение зависимостей.
+Репозиторий содержит два пакета: `@deinject/core` - утилиты для работы плагина и `@deinject/babel-plugin-di` - Babel-плагин, выполняющий внедрение зависимостей.
 
 ## Установка
 
 ```bash
-npm install deinject-core
-npm install -D babel-plugin-deinject-di @babel/core
+npm install @deinject/core
+npm install -D @deinject/babel-plugin-di @babel/core
 # пример с rollup
 npm install -D rollup @rollup/plugin-babel @rollup/plugin-node-resolve @rollup/plugin-typescript
 ```
@@ -18,7 +18,7 @@ npm install -D rollup @rollup/plugin-babel @rollup/plugin-node-resolve @rollup/p
 
 ```typescript
 // config.service.ts
-import { Injectable } from 'deinject-core'
+import { Injectable } from '@deinject/core'
 
 @Injectable()
 export class ConfigService {
@@ -42,7 +42,7 @@ export class TestService {
 }
 
 // index.ts
-import { resolve } from 'deinject-core'
+import { resolve } from '@deinject/core'
 import { H3, serve } from 'h3'
 
 import { TestService } from './test.service'
@@ -55,7 +55,7 @@ serve(app, { port: service.getPort() })
 
 // babel.config.json
 {
-  "plugins": ["deinject-di"]
+  "plugins": ["@deinject/di"]
 }
 ```
 

@@ -141,6 +141,16 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.28.5"
 
+"@deinject/babel-plugin-di@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@deinject/babel-plugin-di/-/babel-plugin-di-1.0.5.tgz#b27ddd5fa46cf5457dc789d60cddd4d55aa2caff"
+  integrity sha512-EYEDVNC1QcWKRaIyuKlyLHBYLNpJ7y+FQaK8BblsCFJaqKoVyExrrFJNAFIAM9eUc/2ss7XMhwfa7gZiTgLQCA==
+
+"@deinject/core@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@deinject/core/-/core-1.0.4.tgz#95438ac0ed8fc3efc0a2dadc75327b7226454639"
+  integrity sha512-wL/E74iiv/jJ0D66ZVfAYI9ptfn7gvfgMDe2ghkdtDkjvLB8TBXjtsBGHcdsSQNzjmoy2+/pHSyEQtgEFj4sYQ==
+
 "@jridgewell/gen-mapping@^0.3.12", "@jridgewell/gen-mapping@^0.3.5":
   version "0.3.13"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz#6342a19f44347518c93e43b1ac69deb3c4656a1f"
