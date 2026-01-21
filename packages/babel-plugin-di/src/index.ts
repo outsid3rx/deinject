@@ -10,14 +10,14 @@ import {
   memberExpression,
 } from '@babel/types'
 
-import { extractConstructorDeps } from './utils'
+import { extractDepsFromClass } from './utils'
 
 export default function diPlugin(): PluginObj {
   return {
     name: 'deinject-di',
 
     visitor: {
-      ClassDeclaration(path) {
+      Class(path) {
         const decorators = path.node.decorators
         if (!decorators || decorators.length === 0) return
 
@@ -37,7 +37,7 @@ export default function diPlugin(): PluginObj {
           throw path.buildCodeFrameError('Injectable class must have a name')
         }
 
-        const deps = extractConstructorDeps(path)
+        const deps = extractDepsFromClass(path)
 
         path.node.decorators!.splice(injectableIndex, 1)
         if (path.node.decorators!.length === 0) {
