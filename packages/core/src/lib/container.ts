@@ -46,6 +46,10 @@ export class Container {
     return instance
   }
 
+  instances(): unknown[] {
+    return Array.from(this.singletons.values())
+  }
+
   private isFactoryProvider(provider: Provider): provider is FactoryProvider {
     return (
       typeof provider === 'object' &&
